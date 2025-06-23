@@ -1,0 +1,176 @@
+/* === General === */
+html {
+    scroll-padding-top: 70px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #15172b;
+    color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+/* === Headers === */
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    padding: 40px;
+    background-color: #303245;
+}
+
+h2 {
+    padding-bottom: 1%;
+}
+
+/* === Navbar === */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #303245;
+    border: 4px solid #303245;
+    z-index: 1000;
+    padding: 10px 10%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* === Formation Name === */
+.formation {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* === Table Layout === */
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+table {
+    margin: auto;
+}
+
+.annuaire {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    border: 2px solid #303245;
+    table-layout: auto;
+}
+
+.annuaire th,
+.annuaire td {
+    border: 1px solid #303245;
+    text-align: center;
+    padding: 4px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.annuaire td:nth-child(3n) {
+    width: 60px;
+}
+
+.annuaire th[colspan="3"] {
+    background-color: #08d;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+/* === Special Cell Types === */
+.holiday {
+    background-color: #d12c2c;
+    color: #fff;
+}
+
+.weekend {
+    background-color: #303245;
+    color: #eee;
+}
+
+.selected-day {
+    background-color: purple;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* === Calendar Container === */
+.calendrier {
+    background-color: #15172b;
+    display: flex;
+    flex-direction: column;
+    padding: 8% 2%;
+}
+
+/* === JavaScript Button === */
+.javaScript {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    color: #eee;
+    background-color: #08d;
+    border: 5px solid #ccc;
+    border-radius: 35px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.javaScript:hover {
+    color: #ccc;
+    background-color: #06b;
+}
+
+/* === Spinner === */
+.spinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+/* === Footer === */
+.copyright {
+    text-align: center;
+    color: #eee;
+    background-color: #303245;
+    border: 4px solid #303245;
+    padding: 50px;
+    margin-top: 99px;
+}
